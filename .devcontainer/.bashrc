@@ -115,6 +115,7 @@ fi
 
 # this system is using root user directly, 
 # add this for overriding sudo command not found error.
+
 alias sudo=''
 export WORKSPACE="/workspaces/mujin-open-challenge"
 export FLASK_APP="$WORKSPACE/mujin_server/mujin_server/main.py"
