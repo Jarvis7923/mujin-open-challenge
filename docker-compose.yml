@@ -4,6 +4,7 @@ services:
     image: mujinopenchallenge:v5
     container_name: mujin-open-challenge
     hostname: "opcua_gateway_server"
+    network_mode: host
     ports:
       - 5000:5000
     working_dir: "/workspaces/mujin-open-challenge"
