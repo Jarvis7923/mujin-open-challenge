@@ -1,7 +1,7 @@
 version: "3"
 services:
   mujin-open-challenge:
-    image: mujinopenchallenge:v5
+    image: swang095/mujinopenchallenge:v5
     container_name: mujin-open-challenge
     hostname: "opcua_gateway_server"
     network_mode: host
