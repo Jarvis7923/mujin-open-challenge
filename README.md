@@ -2,7 +2,22 @@
  48-hour open challenge for mujin - robotic backend system engineer
 
 
-### run test 
+### how to use
+remember to add `--network host` to docker run command. 
+
+
+open terminal and run 
+```
+flask run
+```
+this will open port at 5000
+
+
+some "unit" test for each api, open another terminal and run
+```
+flask_test
+```
+
 
 
 ### versions
