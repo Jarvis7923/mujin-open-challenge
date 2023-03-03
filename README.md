@@ -11,6 +11,8 @@ cd to the root folder of the repo and run:
 docker-compose
 ```
 
+warning: the image is over 7GB. Take you time.
+
 it should pull the image from docker hub right away. When the container started, the flask server will run as well.
 make sure port 5000 on the host machine is available.
 
