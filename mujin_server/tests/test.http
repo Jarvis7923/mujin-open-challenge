@@ -1,0 +1,42 @@
+
+###
+GET http://localhost:5000/api/robot HTTP/1.0
+content-type: application/json
+
+###
+GET http://localhost:5000/ HTTP/1.1
+content-type: text/html; charset=utf-8
+
+###
+GET http://localhost:5000/api/robot/test.json HTTP/1.0
+content-type: application/json
+
+###
+DELETE http://localhost:5000/api/robot/test.json HTTP/1.0
+content-type: application/json
+
+
+###
+PUT http://localhost:5000/api/robot/test.json HTTP/1.0
+content-type: application/json
+
+{
+  "name": "hello"
+}
+
+
+###
+GET http://localhost:5000/api/robot/test.json/download HTTP/1.0
+content-type: application/json
+
+
+###
+POST http://localhost:5000/api/robot HTTP/1.1
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="files"; filename="test.json"
+Content-Type: text/plain
+
+< ./test.json
+------WebKitFormBoundary7MA4YWxkTrZu0gW

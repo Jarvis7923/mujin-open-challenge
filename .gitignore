@@ -1,0 +1,10 @@
+build
+# vim 
+*swp
+*swo
+*.pyc
+
+backup
+collection
+collection_backup
+dep

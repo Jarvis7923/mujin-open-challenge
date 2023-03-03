@@ -1,0 +1,26 @@
+{
+  "name": "mujin-open-challenge",
+  "image": "debian:bullseye",
+  "runArgs": [
+    "--network=host",
+    "--privileged",
+    "--volume=${localWorkspaceFolder}/.devcontainer/.bashrc:/root/.bashrc:rw"
+  ],
+  "containerEnv": {
+    "CONTAINER_NAME": "mujin-open-challenge" // for prettier bash prompt 
+  },
+  // Add the IDs of extensions you want installed when the container is created.
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.black-formatter",
+        "ms-python.python",
+        "ms-vscode.cmake-tools"
+      ]
+    }
+  }
+  // "workspaceMount": "source=${localWorkspaceFolder}/,target=/workspace,type=bind",
+  // "workspaceFolder": "/workspace"
+  // Use 'postCreateCommand' to run commands after the container is created.
+  // Use 'postAttachCommand' to run commands each time you attach to the container.
+}
